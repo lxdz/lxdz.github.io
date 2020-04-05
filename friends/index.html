@@ -29,7 +29,8 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
     
-<meta name="generator" content="Hexo 4.2.0"></head>
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="码海无涯" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 <body>
@@ -619,6 +620,33 @@
         <div class="card">
 
             
+            <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: '77a8f3cffc2c2e60bd59',
+        clientSecret: 'b5582a9371520ad074aed99a85ed164f7f24880e',
+        repo: 'lxdz.github.io',
+        owner: 'lxdz',
+        admin: "lxdz",
+        id: '2018-12-12T21-25-30',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
+
+            
 
             
 
@@ -698,6 +726,9 @@
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">73</span>&nbsp;字
             
             
             

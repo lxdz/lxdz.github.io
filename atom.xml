@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>码海无涯</title>
+  
+  <subtitle>希言的博客</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://darkmoonknight.com/"/>
+  <updated>2020-04-05T07:11:59.166Z</updated>
+  <id>http://darkmoonknight.com/</id>
+  
+  <author>
+    <name>希言</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo+Github博客搭建记录</title>
+    <link href="http://darkmoonknight.com/2020/04/05/hello-world/"/>
+    <id>http://darkmoonknight.com/2020/04/05/hello-world/</id>
+    <published>2020-04-05T06:12:46.547Z</published>
+    <updated>2020-04-05T07:11:59.166Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="软件安装与配置" scheme="http://darkmoonknight.com/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="Hexo" scheme="http://darkmoonknight.com/tags/Hexo/"/>
+    
+      <category term="Github" scheme="http://darkmoonknight.com/tags/Github/"/>
+    
+      <category term="博客" scheme="http://darkmoonknight.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+</feed>
