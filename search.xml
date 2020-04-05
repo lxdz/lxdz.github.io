@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>背包问题详解（上）</title>
+      <link href="/2020/bei-bao-wen-ti-xiang-jie-shang/"/>
+      <url>/2020/bei-bao-wen-ti-xiang-jie-shang/</url>
+      
+        <content type="html"><![CDATA[<h2 id="01背包"><a href="#01背包" class="headerlink" title="01背包"></a>01背包</h2><h2 id="完全背包"><a href="#完全背包" class="headerlink" title="完全背包"></a>完全背包</h2><h2 id="多重背包"><a href="#多重背包" class="headerlink" title="多重背包"></a>多重背包</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法设计与实现 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+            <tag> DP </tag>
+            
+            <tag> 背包 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo+Github博客搭建记录</title>
       <link href="/2020/hello-world/"/>
       <url>/2020/hello-world/</url>

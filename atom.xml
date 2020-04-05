@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://darkmoonknight.com/"/>
-  <updated>2020-04-05T07:11:59.166Z</updated>
+  <updated>2020-04-05T09:20:12.881Z</updated>
   <id>http://darkmoonknight.com/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>背包问题详解（上）</title>
+    <link href="http://darkmoonknight.com/2020/bei-bao-wen-ti-xiang-jie-shang/"/>
+    <id>http://darkmoonknight.com/2020/bei-bao-wen-ti-xiang-jie-shang/</id>
+    <published>2020-04-05T08:24:16.000Z</published>
+    <updated>2020-04-05T09:20:12.881Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;01背包&quot;&gt;&lt;a href=&quot;#01背包&quot; class=&quot;headerlink&quot; title=&quot;01背包&quot;&gt;&lt;/a&gt;01背包&lt;/h2&gt;&lt;h2 id=&quot;完全背包&quot;&gt;&lt;a href=&quot;#完全背包&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="算法设计与实现" scheme="http://darkmoonknight.com/categories/%E7%AE%97%E6%B3%95%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/"/>
+    
+    
+      <category term="算法" scheme="http://darkmoonknight.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="DP" scheme="http://darkmoonknight.com/tags/DP/"/>
+    
+      <category term="背包" scheme="http://darkmoonknight.com/tags/%E8%83%8C%E5%8C%85/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo+Github博客搭建记录</title>
