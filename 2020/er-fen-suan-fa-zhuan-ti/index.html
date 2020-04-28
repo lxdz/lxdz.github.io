@@ -519,8 +519,7 @@
   <span class="token keyword">else</span> r <span class="token operator">=</span> mid<span class="token number">-1</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<h2 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h2><p>##1.数的范围</p>
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定一个按照升序排列的长度为n的整数数组，以及 q 个查询。<br>对于每个查询，返回一个元素k的起始位置和终止位置（位置从0开始计数）。<br>如果数组中不存在该元素，则返回“-1 -1”。</p>
+<h2 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h2><h2 id="1-数的范围"><a href="#1-数的范围" class="headerlink" title="1.数的范围"></a>1.数的范围</h2><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定一个按照升序排列的长度为n的整数数组，以及 q 个查询。<br>对于每个查询，返回一个元素k的起始位置和终止位置（位置从0开始计数）。<br>如果数组中不存在该元素，则返回“-1 -1”。</p>
 <h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>第一行包含整数n和q，表示数组长度和询问个数。<br>第二行包含n个整数（均在1~10000范围内），表示完整数组。<br>接下来q行，每行包含一个整数k，表示一个询问元素。</p>
 <pre><code>6 3
 1 2 2 3 3 4
@@ -573,7 +572,7 @@
 <h2 id="2-搜索旋转排序数组"><a href="#2-搜索旋转排序数组" class="headerlink" title="2.搜索旋转排序数组"></a>2.搜索旋转排序数组</h2><h2 id="题目描述-1"><a href="#题目描述-1" class="headerlink" title="题目描述"></a>题目描述</h2><p>假设按照升序排序的数组在预先未知的某个点上进行了旋转。<br>( 例如，数组 [0,1,2,4,5,6,7] 可能变为 [4,5,6,7,0,1,2] )。<br>搜索一个给定的目标值，如果数组中存在这个目标值，则返回它的索引，否则返回 -1 。<br>你可以假设数组中不存在重复的元素。<br>你的算法时间复杂度必须是 O(log n) 级别</p>
 <h2 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h2><pre><code>输入: nums = [4,5,6,7,0,1,2], target = 0
 输出: 4</code></pre><h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>O(log n) 级别的算法一般都为二分。这里我们分析输入的数据可知，用mid分割成两部分后，必然有一部分是有序的，那我们可以在这一部分进行二分查找，不断缩小范围</p>
-<pre class=" language-cpp"><code class="language-cpp">
+<h2 id="代码-2"><a href="#代码-2" class="headerlink" title="代码"></a>代码</h2><pre class=" language-cpp"><code class="language-cpp">
 <span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
     <span class="token keyword">int</span> <span class="token function">search</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">&amp;</span> nums<span class="token punctuation">,</span> <span class="token keyword">int</span> target<span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -605,7 +604,7 @@
 <h2 id="3-搜索旋转排序数组"><a href="#3-搜索旋转排序数组" class="headerlink" title="3.搜索旋转排序数组"></a>3.搜索旋转排序数组</h2><h2 id="题目描述-2"><a href="#题目描述-2" class="headerlink" title="题目描述"></a>题目描述</h2><p>假设按照升序排序的数组在预先未知的某个点上进行了旋转。<br>( 例如，数组 [0,0,1,2,2,5,6] 可能变为 [2,5,6,0,0,1,2] )。<br>编写一个函数来判断给定的目标值是否存在于数组中。若存在返回 true，否则返回 false。</p>
 <p>和题目2相比，多了数字可以重复的条件</p>
 <h2 id="思路-1"><a href="#思路-1" class="headerlink" title="思路"></a>思路</h2><p>当数字不重复的时候，我们可以通过判断 nums[mid]&lt;nums[r] 将数组分为有序部分和无序部分.<br>但当数字有重复的时候，我们无法通过比较得出哪一部分是有序的,例如[1,0,1,1,1],数组首尾是相等的。<br>那么我们可以先将数组尾部与头部相等的数去除，然后再进行二分。<br>剑指offerz中旋转数组找最小值也运用了这个思想</p>
-<pre class=" language-cpp"><code class="language-cpp">
+<h2 id="代码-3"><a href="#代码-3" class="headerlink" title="代码"></a>代码</h2><pre class=" language-cpp"><code class="language-cpp">
 <span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
     <span class="token keyword">bool</span> <span class="token function">search</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">&amp;</span> nums<span class="token punctuation">,</span> <span class="token keyword">int</span> target<span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -634,7 +633,7 @@
 <h2 id="题目描述-3"><a href="#题目描述-3" class="headerlink" title="题目描述"></a>题目描述</h2><p>假设按照升序排序的数组在预先未知的某个点上进行了旋转。<br>( 例如，数组 [0,1,2,4,5,6,7] 可能变为 [4,5,6,7,0,1,2] )。<br>请找出其中最小的元素。<br>注意数组中可能存在重复的元素。</p>
 <h2 id="输入输出-1"><a href="#输入输出-1" class="headerlink" title="输入输出"></a>输入输出</h2><pre class=" language-cpp"><code class="language-cpp">输入<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">]</span>
 输出<span class="token operator">:</span> <span class="token number">1</span></code></pre>
-<pre class=" language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<h2 id="代码-4"><a href="#代码-4" class="headerlink" title="代码"></a>代码</h2><pre class=" language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
     <span class="token keyword">int</span> <span class="token function">findMin</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">&amp;</span> nums<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">int</span> n <span class="token operator">=</span> nums<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
@@ -1186,12 +1185,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%AE%97%E6%B3%95/">
-                        <span class="chip bg-color">算法</span>
-                    </a>
-                    
                     <a href="/tags/%E5%BC%82%E6%88%96/">
                         <span class="chip bg-color">异或</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">算法</span>
                     </a>
                     
                 </div>
@@ -1400,7 +1399,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">6.8k</span>&nbsp;字
+                class="white-color">7.1k</span>&nbsp;字
             
             
             
