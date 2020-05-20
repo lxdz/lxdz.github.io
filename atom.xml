@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://darkmoonknight.com/"/>
-  <updated>2020-04-28T08:33:17.539Z</updated>
+  <updated>2020-05-20T09:56:19.263Z</updated>
   <id>http://darkmoonknight.com/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>DP系列问题-线性DP(上)</title>
+    <link href="http://darkmoonknight.com/2020/dp-xi-lie-shang/"/>
+    <id>http://darkmoonknight.com/2020/dp-xi-lie-shang/</id>
+    <published>2020-05-04T15:22:03.000Z</published>
+    <updated>2020-05-20T09:56:19.263Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;一-线性DP&quot;&gt;&lt;a href=&quot;#一-线性DP&quot; class=&quot;headerlink&quot; title=&quot;一 线性DP&quot;&gt;&lt;/a&gt;一 线性DP&lt;/h1&gt;&lt;p&gt;经典dp三题，最长上升子序列，最长公共子序列，数字三角形&lt;/p&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="leetcode 题解" scheme="http://darkmoonknight.com/categories/leetcode-%E9%A2%98%E8%A7%A3/"/>
+    
+    
+      <category term="算法" scheme="http://darkmoonknight.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="DP" scheme="http://darkmoonknight.com/tags/DP/"/>
+    
+      <category term="leetcode" scheme="http://darkmoonknight.com/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>异或的性质与应用</title>
@@ -203,7 +235,7 @@
     <link href="http://darkmoonknight.com/2020/bei-bao-wen-ti-xiang-jie-wan-quan-bei-bao/"/>
     <id>http://darkmoonknight.com/2020/bei-bao-wen-ti-xiang-jie-wan-quan-bei-bao/</id>
     <published>2020-04-05T09:53:57.000Z</published>
-    <updated>2020-04-05T12:49:26.913Z</updated>
+    <updated>2020-05-11T15:50:54.217Z</updated>
     
     <summary type="html">
     
